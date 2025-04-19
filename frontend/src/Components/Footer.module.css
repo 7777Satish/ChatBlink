@@ -83,3 +83,53 @@
 .footer .bottom ul li:hover{
     color: #bbbbbb;
 }
+
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 50px 100px;
+        grid-template-columns: 1fr;
+    }
+
+    .footer .bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 50px;
+    }
+
+    .footer .top {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .top .logo {
+        justify-content: center;
+    }
+
+    .footer .bottom {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer .bottom ul {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .top .text {
+        gap: 5px;
+    }
+
+    .footer .bottom ul li {
+        font-size: 0.9em;
+    }
+}

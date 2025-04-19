@@ -85,3 +85,52 @@
     text-decoration: none;
     transition: all 0.3s ease;
 }
+
+
+@media (max-width: 768px) {
+    .main .loginForm .title {
+        font-size: 4em;
+    }
+
+    .main .loginForm .form {
+        width: 80vw;
+    }
+
+    .main .loginForm .form .inputGroup .input {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .main .loginForm .form .submitButton {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .main .loginForm .form .forgotPassword {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main .loginForm .title {
+        font-size: 3em;
+    }
+
+    .main .loginForm .form {
+        width: 90vw;
+    }
+
+    .main .loginForm .form .inputGroup .input {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .main .loginForm .form .submitButton {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    .main .loginForm .form .forgotPassword {
+        font-size: 0.6em;
+    }
+}

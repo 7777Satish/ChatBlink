@@ -63,3 +63,45 @@
 
 /* Header Text Section End */
 
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .header .main h1 {
+        font-size: 4em;
+    }
+
+    .header .main .paragraphs {
+        width: 80vw;
+    }
+
+    .header .main {
+        padding: 50px 0;
+        gap: 30px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+
+    .header .main h1 {
+        font-size: 3em;
+    }
+
+    .header .main .paragraphs {
+        width: 90vw;
+    }
+
+    .header .main {
+        padding: 30px 0;
+        gap: 20px;
+    }
+
+    .header .main .paragraphs p {
+        font-size: 0.9em;
+    }
+}
