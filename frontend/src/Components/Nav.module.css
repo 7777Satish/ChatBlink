@@ -1,0 +1,88 @@
+.nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav .left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav .left img{
+    height: 40px;
+    filter: hue-rotate(270deg);
+}
+
+.nav .left ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav .left ul li{
+    list-style: none;
+}
+
+.nav .left ul li a{
+    color: #a1a1a1;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.nav .left ul li a:hover{
+    color: #d1d1d1;
+}
+
+.nav .left ul .active{
+    color: #fff !important;
+}
+
+.nav .right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav .right .icons{
+    display: flex;
+    gap: 10px;
+    color: #d1d1d1;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.nav .right .icons svg:hover{
+    color: #fff;
+}
+
+.nav .right .buttons button{
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 0.85em;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    border: 1px solid #bc6eed;
+    color: #bc6eed;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.nav .right .buttons button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav .right .buttons button:hover{
+    border: 1px solid #82bded;
+    color: #82bded;
+}

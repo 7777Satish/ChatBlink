@@ -1,0 +1,52 @@
+
+/* Banner Start */
+
+.banner{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.banner .container{
+    width: 85vw;
+    height: 350px;
+    background: rgba(194, 97, 255, 0.6);
+    color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .container h1{
+    width: 80%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.banner .container button{
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    border-radius: 30px;
+    color: #e1e1e1;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.banner .container button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.banner .container button:hover{
+    background: #d1d1d1;
+    color: #121212;
+}
+
+/* Banner End */
