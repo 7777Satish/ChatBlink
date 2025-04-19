@@ -1,138 +1,191 @@
-/* General Layout */
-.appContainer {
+.claim{
+    width: 100vw;
+    height: 35px;
     display: flex;
-    height: 100vh;
-    background-color: #121212;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: #bc6eed;;
 }
 
-/* Sidebar (Left Navbar) */
-.sidebar {
-    width: 250px;
-    background-color: #222;
-    color: white;
+.claim p a{
+    font-weight: bold;
+    color: rgb(78, 65, 193);
+}
+
+.main{
+    width: 100vw;
+    height: calc( 100vh - 35px );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid rgba(199, 199, 199, 0.3);
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: 60px 1fr 70px;
+    align-items: center;
+
+    user-select: none;
+}
+
+.nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.3);
+}
+
+.nav .logo img{
+    height: 25px;
+    filter: hue-rotate(270deg);
+}
+
+.nav .logo h1{
+    font-size: 1.2em;
+}
+
+.nav .center{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.nav .tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
     padding: 10px;
 }
 
-.logoContainer {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #333;
+.nav .tabs .tab{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    
+    background: inherit;
+    color: inherit;
+    
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(188, 110, 237, 0.5);
+    padding: 5px;
+
+    cursor: pointer;
 }
 
-.logo {
+.nav .tabs .active{
+    background: rgba(188, 110, 237, 1);
+}
+
+.nav .tabContentContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .tabContentContainer .tabContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #888;
+}
+
+.nav .tabContentContainer .tabContent svg{
+    font-size: xxx-large;
+}
+
+.nav .tabContentContainer .tabContent h2{
+    font-size: medium;
+}
+
+/* Nav Bottom */
+
+.nav .bottom{
+    padding: 5px;
+    border-top: 1px solid rgba(199, 199, 199, 0.3);
+}
+
+.nav .bottom .account{
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 45px calc( 100% - 90px ) 45px;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav .bottom .account .image{
     height: 40px;
-    margin-bottom: 5px;
+    width: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
-.siteName {
-    color: rgb(188, 110, 237);
-    margin: 0;
+.nav .bottom .account .image img{
+    width: 40px;
 }
 
-.navButtons {
-    padding: 10px;
-}
-
-.navBtn {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border: none;
-    background-color: #333;
-    color: white;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Account Info */
-.accountSection {
-    padding: 10px;
-    border-top: 1px solid #333;
-}
-
-.accountUsername {
-    color: #999;
-    font-size: 0.8em;
-}
-
-/* Chat Area */
-.chatArea {
-    flex-grow: 1;
-    background-color: #181818;
-    color: white;
+.nav .bottom .account .text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
+    justify-content: center;
 }
 
-/* Intro Box */
-.introBox {
-    padding: 20px;
-    background-color: #222;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    text-align: center;
+.nav .bottom .account .text h2{
+    font-size: small;
 }
 
-.inputGroup {
-    margin: 10px 0;
-}
-
-.dropdown {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    border: none;
-}
-
-.textInput {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    border: none;
-    width: 100%;
-}
-
-/* Chat Messages */
-.chatMessages {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 10px;
-    background-color: #333;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-/* Message Input */
-.messageInputArea {
+.nav .bottom .account .text span{
+    font-size: small;
     display: flex;
-    padding: 10px;
-    background-color: #222;
-    border-radius: 10px;
+    gap: 5px;
+    align-items: center;
 }
 
-.messageInputArea .textInput {
-    flex-grow: 1;
-    margin-right: 10px;
+.nav .bottom .account .text span span{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    border-radius: 50%;
 }
 
-/* Buttons */
-.primaryBtn {
-    padding: 8px 15px;
-    background-color: rgb(188, 110, 237);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.nav .bottom .account .text span .online{
+    background-color: rgb(59, 233, 175);
+}
+
+.nav .bottom .account .text span .offline{
+    background-color: rgb(229, 61, 61);
+}
+
+.chat{
+    width: 100%;
+    height: 100%;
 }

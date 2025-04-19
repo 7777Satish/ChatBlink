@@ -11,6 +11,7 @@ app.get('/',(req,res)=>{
     console.log(req.body);
     res.send("Nice")
 })
+
 app.post('/contact', (req,res)=>{
     console.log(req.body);
 
