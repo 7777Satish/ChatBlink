@@ -1,0 +1,107 @@
+.header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Header Text Section Start */
+
+.header .main{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 100px 0;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .main .mainBG{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, transparent, transparent, #121212);
+}
+
+.header .main b{
+    color: #bc6eed;
+}
+
+.header .main h1{
+    font-size: 6em;
+    text-wrap: nowrap;
+    text-align: center;
+    color: #dddddd !important;
+}
+
+.header .main .paragraphs{
+    text-wrap: nowrap;
+    /* overflow-x: visible; */
+    width: 60vw;
+}
+
+.header .main .paragraphs b{
+    /* color: #974bc6; */
+    color: #dddddd;
+}
+
+.header .main .paragraphs p{
+    color: #a1a1a1;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header .main .paragraphs p:last-child{
+    margin-top: 10px;
+    float: right;
+}
+
+/* Header Text Section End */
+
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .header .main h1 {
+        font-size: 4em;
+    }
+
+    .header .main .paragraphs {
+        width: 80vw;
+    }
+
+    .header .main {
+        padding: 50px 0;
+        gap: 30px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+
+    .header .main h1 {
+        font-size: 3em;
+    }
+
+    .header .main .paragraphs {
+        width: 90vw;
+    }
+
+    .header .main {
+        padding: 30px 0;
+        gap: 20px;
+    }
+
+    .header .main .paragraphs p {
+        font-size: 0.9em;
+    }
+}

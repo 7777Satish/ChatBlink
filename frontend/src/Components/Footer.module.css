@@ -1,0 +1,135 @@
+.footer{
+    width: 100vw;
+    padding: 70px 180px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer .top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+}
+
+.footer .top .logo{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    align-items: center;
+}
+
+.footer .top img{
+    height: 25px;
+    filter: hue-rotate(270deg);
+}
+
+.footer .top .logo span{
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.footer .top .text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer .top .text .copyright{
+    color: #919191;
+}
+
+.footer .top .icons{
+    display: flex;
+    gap: 10px;
+    color: #d1d1d1;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.footer .top .icons svg:hover{
+    color: #fff;
+}
+
+.footer .bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer .bottom ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    color: #a1a1a1;
+}
+
+.footer .bottom ul li{
+    cursor: pointer;
+}
+
+.footer .bottom ul li b{
+    color: #bbbbbb !important;
+}
+
+.footer .bottom ul li:hover{
+    color: #bbbbbb;
+}
+
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 50px 100px;
+        grid-template-columns: 1fr;
+    }
+
+    .footer .bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 50px;
+    }
+
+    .footer .top {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .top .logo {
+        justify-content: center;
+    }
+
+    .footer .bottom {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer .bottom ul {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .top .text {
+        gap: 5px;
+    }
+
+    .footer .bottom ul li {
+        font-size: 0.9em;
+    }
+}

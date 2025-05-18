@@ -1,0 +1,161 @@
+.main{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .signupForm{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 100px 0;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .signupForm .title{
+    font-size: 6em;
+    text-wrap: nowrap;
+    text-align: center;
+    color: #dddddd !important;
+}
+.main .signupForm .form{
+    text-wrap: nowrap;
+    width: 60vw;
+}
+
+.main .signupForm .form .inputGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.main .signupForm .form .inputGroup .label{
+    color: #a1a1a1;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main .signupForm .form .inputGroup .input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a1a1a1;
+    background-color: #121212;
+    color: #dddddd;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.main .signupForm .form .inputGroup .input:focus{
+    border: 1px solid #bc6eed;
+    outline: none;
+}
+
+.main .signupForm .form .submitButton{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #bc6eed;
+    color: #121212;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main .signupForm .form .submitButton:hover{
+    background-color: #974bc6;
+    color: #ddd;
+}
+
+.main .signupForm .form .submitButton:active{
+    background-color: #7a3bb0;
+}
+
+.main .signupForm .loginLink{
+    color: #a1a1a1;
+    font-size: 0.8em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main .signupForm .loginLink a{
+    color: #bc6eed;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.main .signupForm .loginLink a:hover{
+    color: #974bc6;
+}
+
+.main .signupForm .loginLink a:active{
+    color: #7a3bb0;
+}
+.main .signupForm .loginLink a:visited{
+    color: #bc6eed;
+    border: none;
+}
+
+
+@media (max-width: 1024px) {
+    .main .signupForm .form {
+        width: 80vw;
+    }
+
+    .main .signupForm .title {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        gap: 30px;
+    }
+
+    .main .signupForm {
+        padding: 50px 0;
+    }
+
+    .main .signupForm .form {
+        width: 90vw;
+    }
+
+    .main .signupForm .title {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main .signupForm .title {
+        font-size: 2em;
+    }
+
+    .main .signupForm .form .inputGroup .label {
+        font-size: 0.9em;
+    }
+
+    .main .signupForm .form .inputGroup .input {
+        font-size: 0.9em;
+    }
+
+    .main .signupForm .form .submitButton {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .main .signupForm .loginLink {
+        font-size: 0.7em;
+    }
+}

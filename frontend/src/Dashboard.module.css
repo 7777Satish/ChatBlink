@@ -1,0 +1,212 @@
+.claim{
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: #451464;
+    color: #afa0b8;
+}
+
+.claim p a{
+    font-weight: 500;
+    color: rgb(78, 65, 193);
+}
+
+.main{
+    width: 100vw;
+    height: calc( 100vh - 35px );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid rgba(199, 199, 199, 0.3);
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-rows: 60px 1fr 70px;
+    align-items: center;
+
+    user-select: none;
+}
+
+.nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.3);
+}
+
+.nav .logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav .logo img{
+    height: 25px;
+    filter: hue-rotate(270deg);
+}
+
+.nav .logo h1{
+    font-size: 1.2em;
+}
+
+.nav .center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav .tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.nav .tabs .tab{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    
+    background: inherit;
+    color: inherit;
+    
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(188, 110, 237, 0.5);
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+.nav .tabs .active{
+    background: #451464;
+}
+
+.nav .tabContentContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .tabContentContainer .tabContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #888;
+}
+
+.nav .tabContentContainer .tabContent svg{
+    font-size: xxx-large;
+}
+
+.nav .tabContentContainer .tabContent h2{
+    font-size: medium;
+}
+
+/* Nav Bottom */
+
+.nav .bottom{
+    padding: 5px;
+    border-top: 1px solid rgba(199, 199, 199, 0.3);
+}
+
+.nav .bottom .account{
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 45px calc( 100% - 90px ) 45px;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav .bottom .account .image{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.nav .bottom .account .image img{
+    width: 40px;
+}
+
+.nav .bottom .account .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav .bottom .account .text h2{
+    font-size: small;
+}
+
+.nav .bottom .account .text span{
+    font-size: small;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.nav .bottom .account .text span span{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.nav .bottom .account .text span .online{
+    background-color: rgb(59, 233, 175);
+}
+
+.nav .bottom .account .text span .offline{
+    background-color: rgb(229, 61, 61);
+}
+
+.chat{
+    width: 100%;
+    height: 100%;
+}
+
+
+.chat .details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

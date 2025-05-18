@@ -1,0 +1,76 @@
+.main{
+    width: 400px;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    background: #242424;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    border: 1px solid rgba(188, 110, 237, 0.5);
+}
+
+.main h1{
+    font-size: 1.3em;
+    color: #d6d6d6;
+}
+
+.main p{
+    font-size: 1em;
+    color: #b1b1b1;
+}
+
+.main .buttons{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.main .buttons button{
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: #2e2e2e;
+    color: #d6d6d6;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.main .buttons .active{
+    background: #1f1f1f;
+    border: 1px solid #8226bb;
+}
+
+.main .terms{
+    font-size: small;
+    color: #d4d4d4;
+}
+
+.main .terms a{
+    color: #ab62cb;
+    text-decoration: none;
+}
+
+.main .submit{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background: #8226bb;
+    border: none;
+    outline: none;
+    color: #d6d6d6;
+    cursor: pointer;
+}

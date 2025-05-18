@@ -1,0 +1,136 @@
+.main{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.main .loginForm{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 100px 0;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .loginForm .title{
+    font-size: 6em;
+    text-wrap: nowrap;
+    text-align: center;
+    color: #dddddd !important;
+}
+
+.main .loginForm .form{
+    text-wrap: nowrap;
+    width: 60vw;
+}
+
+.main .loginForm .form .inputGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.main .loginForm .form .inputGroup .label{
+    color: #a1a1a1;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main .loginForm .form .inputGroup .input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a1a1a1;
+    background-color: #121212;
+    color: #dddddd;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.main .loginForm .form .submitButton{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #bc6eed;
+    color: #121212;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main .loginForm .form .submitButton:hover{
+    background-color: #974bc6;
+    color: #ddd;
+}
+
+.main .loginForm .form .forgotPassword{
+    color: #a1a1a1;
+    font-size: 0.8em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main .loginForm .form .forgotPassword .link{
+    color: #bc6eed;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .main .loginForm .title {
+        font-size: 4em;
+    }
+
+    .main .loginForm .form {
+        width: 80vw;
+    }
+
+    .main .loginForm .form .inputGroup .input {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .main .loginForm .form .submitButton {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .main .loginForm .form .forgotPassword {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main .loginForm .title {
+        font-size: 3em;
+    }
+
+    .main .loginForm .form {
+        width: 90vw;
+    }
+
+    .main .loginForm .form .inputGroup .input {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .main .loginForm .form .submitButton {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    .main .loginForm .form .forgotPassword {
+        font-size: 0.6em;
+    }
+}

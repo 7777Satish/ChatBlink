@@ -1,0 +1,112 @@
+
+/* Banner Start */
+
+.banner{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.banner .container{
+    width: 85vw;
+    height: 350px;
+    background: rgba(194, 97, 255, 0.6);
+    color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .container h1{
+    width: 80%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.banner .container button{
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    border-radius: 30px;
+    color: #e1e1e1;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.banner .container button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.banner .container button:hover{
+    background: #d1d1d1;
+    color: #121212;
+}
+
+/* Banner End */
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+    .banner .container {
+        width: 90vw;
+        height: 300px;
+        gap: 40px;
+    }
+
+    .banner .container h1 {
+        font-size: 2.5em;
+    }
+
+    .banner .container button {
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 80px 0;
+    }
+
+    .banner .container {
+        height: 250px;
+        gap: 30px;
+    }
+
+    .banner .container h1 {
+        font-size: 2em;
+    }
+
+    .banner .container button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 60px 0;
+    }
+
+    .banner .container {
+        width: 95vw;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .banner .container h1 {
+        font-size: 1.5em;
+    }
+
+    .banner .container button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
