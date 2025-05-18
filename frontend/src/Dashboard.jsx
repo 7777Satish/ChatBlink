@@ -1,3 +1,6 @@
+const apiUrl = import.meta.env.VITE_API_URL;
+const socketUrl = import.meta.env.VITE_SOCKET_URL;
+
 import { createContext, useEffect, useState } from 'react';
 import styles from './Dashboard.module.css';
 import { FaGear } from 'react-icons/fa6';
@@ -6,7 +9,7 @@ import Details from './Components/Dashboard/Details';
 import io from 'socket.io-client';
 import Chat from './Components/Chat';
 
-const socket = io('http://localhost:4000');
+const socket = io(socketUrl);
 
 function generateUsername() {
     const adjectives = [
