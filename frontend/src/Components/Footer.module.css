@@ -18,19 +18,17 @@
 .footer .top .logo{
     display: flex;
     /* flex-direction: column; */
-    gap: 10px;
+    gap: 5px;
     align-items: center;
 }
 
 .footer .top img{
-    height: 25px;
-    filter: hue-rotate(270deg);
+    height: 40px;
 }
 
 .footer .top .logo span{
     font-size: 1.5em;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .footer .top .text{

@@ -96,7 +96,8 @@ function Main() {
                 <div className={styles.nav}>
                     <div className={styles.logo}>
                         <a href="/">
-                            <img alt="logo" src="https://cdn.prod.website-files.com/64e6eacd2c162c96bf6c6af9/64e6eacd2c162c96bf6c6b17_tgrs_logo_orange.svg" />
+                            <img alt="logo" src="/logo.png" />
+                            {/* <img alt="logo" src="https://cdn.prod.website-files.com/64e6eacd2c162c96bf6c6af9/64e6eacd2c162c96bf6c6b17_tgrs_logo_orange.svg" /> */}
                             <h1>ChatBlink</h1>
                         </a>
                     </div>

@@ -15,9 +15,20 @@
     gap: 50px;
 }
 
+.nav .left .logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav .left .logo h1{
+    font-weight: 500;
+    color: #eaeaea;
+}
+
 .nav .left img{
     height: 40px;
-    filter: hue-rotate(270deg);
+    /* filter: hue-rotate(270deg); */
 }
 
 .nav .left ul{

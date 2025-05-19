@@ -49,15 +49,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
     color: inherit;
     text-decoration: none;
 }
 
 .nav .logo img{
-    height: 25px;
-    filter: hue-rotate(270deg);
+    height: 40px;
 }
 
 .nav .logo h1{

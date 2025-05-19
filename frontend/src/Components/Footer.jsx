@@ -7,8 +7,9 @@ function Footer(){
         <footer className={styles.footer}>
             <div className={styles.top}>
                 <div className={styles.logo}>
-                    <img alt="logo" src="https://cdn.prod.website-files.com/64e6eacd2c162c96bf6c6af9/64e6eacd2c162c96bf6c6b17_tgrs_logo_orange.svg"/>
-                    <span>Blink Chat</span>
+                    <img alt="logo" src="/logo.png"/>
+                    {/* <img alt="logo" src="https://cdn.prod.website-files.com/64e6eacd2c162c96bf6c6af9/64e6eacd2c162c96bf6c6b17_tgrs_logo_orange.svg"/> */}
+                    <span>ChatBlink</span>
                 </div>
                 <div className={styles.text}>
                     <p>A random chat, a random connection.</p>
